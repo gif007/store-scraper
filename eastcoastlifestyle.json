@@ -1,0 +1,8 @@
+{
+    "BASE_URL": "https://eastcoastlifestyle.com",
+    "PAGINATOR_SELECTOR": "#bc-sf-filter-bottom-pagination > div > div > a.Pagination__NavItem",
+    "ITEM_DETAIL_SELECTOR": "div > div.ProductItem__Wrapper > a",
+    "ITEM_IMAGE_SELECTOR": "div > div > img",
+    "ITEM_TITLE_SELECTOR": "#shopify-section-product-template > section > div.Product__Wrapper > div.Product__InfoWrapper > div > div > div.ProductMeta > h1",
+    "ITEM_PRICE_SELECTOR": "#shopify-section-product-template > section > div.Product__Wrapper > div.Product__InfoWrapper > div > div > div.ProductMeta > div.ProductMeta__PriceList.Heading > span"
+}
