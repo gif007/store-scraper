@@ -8,7 +8,9 @@ import requests
 db = json.loads(open(os.path.join(sys.path[0], 'database.json')).read())
 
 def createTuples(data):
+    """Returns a list of 2-tuples containing the item name and the Url where it can be downloaded"""
     listofTuples = []
+
     for key in data.keys():
         oneTuple = (key, data[key]['imageUrl'])
         listofTuples.append(oneTuple)
@@ -40,7 +42,6 @@ def downloadImage(name, url):
         name = name.replace('/', ' or ')
 
     name = name.rstrip('\\')
-
     fileName = name + '.jpg'
 
     with open(fileName, 'wb') as file:
@@ -49,6 +50,7 @@ def downloadImage(name, url):
 
 
 if __name__ == '__main__':
+    """Ensure that a sub-directory is created for the database images then download them all"""
     dirName = os.path.join(sys.path[0], 'database-images')
 
     if not os.path.isdir(dirName):

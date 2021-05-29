@@ -17,5 +17,7 @@ def getMean(data):
 
 
 if __name__ == '__main__':
+    """Produce and present mean cost"""
+    
     mean = getMean(db)
     print('The average cost of an item at this store is: $' + str(mean))
